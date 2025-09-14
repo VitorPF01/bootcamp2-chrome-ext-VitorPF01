@@ -21,3 +21,4 @@ Veja `docs/index.html` para uma visualização simples e o link de download.
 
 ## Licença
 MIT — veja o arquivo LICENSE.
+<img width="1920" height="1035" alt="Captura de tela 2025-09-14 143732" src="https://github.com/user-attachments/assets/ed62173b-974d-4db3-a616-9e14c4da59bc" />
