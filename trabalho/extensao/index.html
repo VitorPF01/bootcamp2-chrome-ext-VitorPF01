@@ -3,9 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Teste GitHub Pages</title>
+  <title>Bootcamp Helper — Chrome Extension</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>GitHub Pages funcionando!</h1>
+  <header>
+    <img src="assets/logo.png" alt="Logo Bootcamp Helper" id="logo">
+    <h1>Bootcamp Helper</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>Sobre a extensão</h2>
+      <p>Extensão para Chrome (Manifest V3) criada no Bootcamp II. Simples, funcional e pronta para testes.</p>
+    </section>
+
+    <section>
+      <h2>Instalação Manual</h2>
+      <ol>
+        <li>Acesse <code>chrome://extensions</code></li>
+        <li>Ative o <strong>Developer mode</strong></li>
+        <li>Clique em <strong>Load unpacked</strong> e selecione a pasta do projeto</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Teste da extensão</h2>
+      <button id="ping">Ping background</button>
+      <p id="status"></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
