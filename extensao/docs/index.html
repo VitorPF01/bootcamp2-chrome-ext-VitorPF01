@@ -1,19 +1,71 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!doctype html>
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <title>Bootcamp Helper - Extensão para Chrome</title>
-    <style>
-        body { font-family: sans-serif; text-align: center; padding: 20px; }
-        img { max-width: 80%; border: 1px solid #ccc; margin-top: 20px; }
-        a { display: inline-block; margin-top: 20px; padding: 10px 20px; background-color: #007bff; color: white; text-decoration: none; border-radius: 5px; }
-    </style>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Bootcamp Helper — Extensão MV3</title>
+<style>
+  body{font-family: Arial, Helvetica, sans-serif; max-width:900px;margin:40px auto;color:#111}
+  header{display:flex;gap:16px;align-items:center}
+  img{width:72px;height:72px}
+  pre{background:#f4f4f4;padding:12px;border-radius:6px;overflow:auto}
+  .actions a{display:inline-block;margin-right:8px;padding:8px 12px;background:#111;color:#fff;border-radius:6px;text-decoration:none}
+</style>
 </head>
 <body>
-    <h1>Bootcamp Helper - Extensão MV3</h1>
-    <p>Extensão para Chrome (Manifest V3) — projeto do Bootcamp II.</p>
-    <img src="screenshot.png" alt="Screenshot da extensão">
-    <br>
-    <a href="https://github.com/alexandren18/bootcamp2-chrome-ext-alexandren18/releases">Baixar a Extensão (.zip)</a>
+<header>
+  <img src="../src/assets/logo.svg" alt="logo">
+  <div>
+    <h1>Bootcamp Helper</h1>
+    <p>Extensão de exemplo (Manifest V3). Inclui popup, service worker e content script.</p>
+  </div>
+</header>
+
+<section>
+  <h2>Instalação manual (modo desenvolvedor)</h2>
+  <ol>
+    <li>Abra chrome://extensions e ative <strong>Developer mode</strong>.</li>
+    <li>Clique em <strong>Load unpacked</strong> e selecione a pasta do projeto (a raiz onde está manifest.json).</li>
+    <li>Abra o popup pelo ícone da extensão e teste o botão <em>Ping background</em>.</li>
+  </ol>
+
+  <h3>Download</h3>
+  <p class="actions">
+    <a href="../my-chrome-extension.zip" download>Baixar .zip</a>
+  </p>
+
+  <h3>Permissões</h3>
+  <ul>
+    <li><code>storage</code> — armazenar configurações localmente</li>
+    <li><code>host_permissions</code> — o content script roda em páginas matching (developer.chrome.com)</li>
+  </ul>
+
+  <h3>Uso</h3>
+  <p>Abra o popup e clique em <em>Ping background</em>. O popup envia uma mensagem ao service worker e mostra a resposta.</p>
+
+  <h3>Estrutura</h3>
+  <pre>
+my-chrome-extension/
+├─ src/
+│  ├─ popup/
+│  │  ├─ popup.html
+│  │  ├─ popup.js
+│  │  └─ popup.css
+│  ├─ content/
+│  │  └─ content.js
+│  ├─ background/
+│  │  └─ service-worker.js
+│  ├─ assets/
+│  │  └─ logo.svg
+│  └─ styles/
+│     └─ global.css
+├─ icons/
+├─ docs/
+│  └─ index.html
+├─ manifest.json
+├─ README.md
+└─ LICENSE
+  </pre>
+</section>
 </body>
 </html>
