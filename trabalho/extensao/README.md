@@ -1,6 +1,6 @@
 # Bootcamp Helper — Extensão Chrome (Manifest V3)
 
-Extensão de exemplo para o Bootcamp II. Objetivo: demonstrar um fluxo mínimo MV3 com popup, service worker e content script.
+Extensão de exemplo para o Bootcamp II. Objetivo: demonstrar um fluxo mínimo MV3 com popup, service worker e content script
 
 ## Instalação local (developer mode)
 1. Acesse `chrome://extensions`.
